@@ -6,20 +6,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <style>
+        h1 {
+            font-size: 26px;
+        }
+        .list-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px;
+        }
+        .list-title h2 {
+            font-size: 20px;
+        }
+        .list-title a {
+            font-size: 16px;
+        }
         .name {
             display: block;
             font-size: 12px;
-            margin: 16px 0 4px 0;
+            margin: 16px 30px 4px 30px;
             color: gray;
         }
         .title {
             display: block;
             font-size: 14px;
-            margin: 8px 0;
+            margin: 8px 30px;
         }
         .price {
             font-size: 18px;
-            margin: 4px 0;
+            margin: 4px 30px;
         }
         .won {
             font-size: 14px;
@@ -29,10 +44,27 @@
         .thumb {
             width: 194px;
             height: 194px;
+            margin: 0 30px;
         }
         .thumb img {
             width: 100%;
             height: 100%;
+        }
+        .link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 377px;
+            height: 80px;
+            border-radius: 10px;
+            margin: 30px;
+            background-color: #faf7e1;
+            background-image: url('./images/irangi_4.png');
+            background-repeat: no-repeat;
+            background-size: 60px;
+            background-position: center right 10px;
+            padding: 6px 20px;
+
         }
     </style>
 </head>
@@ -52,5 +84,9 @@
             </li>
         </ul>
     </section>
+    <a href="#" class="link">
+        <h2>무료 스티커 모음집</h2>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.29302 5.29289C8.68354 4.90237 9.31655 4.90237 9.70708 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3164 15.7071 12.707L9.70708 18.707C9.31655 19.0975 8.68354 19.0975 8.29302 18.707C7.90249 18.3164 7.90249 17.6834 8.29302 17.2929L13.586 11.9999L8.29302 6.70696C7.90249 6.31643 7.90249 5.68342 8.29302 5.29289Z" fill="black"/></svg>
+    </a>
 </body>
 </html>
