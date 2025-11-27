@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이모티콘 마켓 반응형 사이트</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            font-family: "Pretendard"
+        }
+        .page-header {
+            background-color: white;
+            margin: 12px 0;
+        }
+        .inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 50px;
+        }
+        .logo {
+            color: tomato;
+            font-size: 26px;
+            font-weight: 600;
+        }
+        .search-input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid #cbcbcb;
+            padding: 8px 18px;
+        }
+        .search-input input {
+            width: 200px;
+            box-sizing: border-box;
+            border: none;
+        }
+        .search-icon {
+            width: 24px;
+            cursor: pointer;
+        }
+        .menu-box {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .menu-box a {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .login {
+            background-color: tomato;
+            color: white;
+            width: 90px;
+            height: 46px;
+            border-radius: 23px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* 위에까진 헤더*/
+        .hero-section {
+            background-color: antiquewhite;
+            position: relative;
+            padding: 100px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .hero-title {
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .hero-section span {
+            font-size: 18px;
+        }
+        .popular-emoji {
+            background-color: tomato;
+            color: white;
+            width: 200px;
+            height: 46px;
+            border-radius: 23px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 16px;
+            overflow: auto;
+            position: absolute;
+            right: 50px;
+            top: calc(50%-300px);
+        }
+        .hero-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#">
+                    EMOJI Market
+                </a>
+            </h1>
+            <div class="search-box">
+                <div class="search-input">
+                    <input type="search" placeholder="귀여운 이모티콘을 찾아보세요!">
+                    <img class="search-icon" src="./images/icons/search.svg">
+                </div>
+                
+            </div>
+            <div class="menu-box">
+                <a href="#" class="home">홈</a>
+                <a href="#" class="popular-item">인기</a>
+                <a href="#" class="new-item">신규</a>
+                <a href="#" class="login">로그인</a>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section">
+        <h1 class="hero-title">당신의 대화를<br>더 귀엽게 만들어보세요!</h1>
+        <span>매일매일 새로운 작가님들의<br>반짝이는 아이디어를 만나보세요.</span>
+        <a href="#" class="popular-emoji">인기 이모티콘 보러가기</a>
+        <div class="hero-img">
+            <img src="./images/full_bg_v1.jpg" alt="">
+        </div>
+    </section>
+</body>
+</html>
