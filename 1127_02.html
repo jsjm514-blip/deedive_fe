@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <style>
         body {
-            font-family: "Pretendard","san seriif"
+            font-family: "Pretendard",sans-serif
         }
+        /* 헤더 */
         .page-header {
             background-color: white;
             margin: 12px 0;
@@ -34,10 +35,10 @@
             background-color: white;
             border-radius: 20px;
             border: 1px solid #cbcbcb;
-            padding: 8px 18px;
+            padding: 8px 20px;
         }
         .search-input input {
-            width: 200px;
+            width: 260px;
             box-sizing: border-box;
             border: none;
         }
@@ -60,14 +61,14 @@
         .login {
             background-color: #1b1b1b;
             color: white;
-            width: 90px;
-            height: 46px;
-            border-radius: 23px;
+            width: 84px;
+            height: 40px;
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        /* 위에까진 헤더*/
+        /* 히어로 */
         .section-inner {
             padding: 100px 50px;
             display: flex;
@@ -116,6 +117,117 @@
             object-fit: cover;
             display: block;
         }
+        /* 카테고리 */
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .category, .recommand {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f7f7f7;
+        }
+        .category-inner, .recommand-inner {
+            padding: 30px 50px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .category-tag {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+        }
+        .category-tag a {
+            background-color: #fff;
+            color: #242424;
+            border: 1px solid #e5e5e5;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .category-tag a.active {
+            background-color: #242424;
+            color: #fff;
+            border: none;
+        }
+        /* 오늘의 추천 이모티콘 */
+        .rec-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+        }
+        .more p {
+            color: gray;
+            font-size: 14px;
+        }
+        .card-list {
+            gap: 16px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+            margin-bottom: 40px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 260px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .description {
+            background-color: #fff;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        /* 푸터 */
+        .footer {
+            margin: 30px 0 ;
+            background-color: #fff;
+        }
+        .footer-inner {
+            gap: 20px;
+            width: 1200px;
+            padding: 50px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .link {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+        }
+        .footer-inner strong {
+            font-size: 20px;
+            font-weight: 600;
+            color: #cecece;
+        }
+        .footer-inner p {
+            font-size: 16px;
+            font-weight: 300;
+            color: #959595;
+        }
 
     </style>
 </head>
@@ -151,6 +263,124 @@
                 <img src="./images/full_bg_v1.jpg" alt="">
             </div>         
         </div>
+    </section>
+    <section class="category">
+        <div class="category-inner">
+            <h2>카테고리</h2>
+            <div class="category-tag">
+                <a href="#">전체</a>
+                <a href="#">동물</a>
+                <a href="#">커플</a>
+                <a href="#">직장인</a>
+                <a href="#">병맛</a>
+                <a href="#">텍스트</a>
+            </div>
+        </div>
+    </section>
+    <section class="recommand">
+        <div class="recommand-inner">
+            <div class="rec-title">
+                <h2>오늘의 추천 이모티콘</h2>
+                <a href="#" class="more">
+                    <p>전체보기</p>
+                    <img src="./images/icons/arrow-right.svg">
+                </a>
+            </div>
+            <ul class="card-list">
+                <li class="card">
+                    <div class="thumb">
+                        <a href="#"><img src="./images/emojimarket/bear.svg" alt=""></a>
+                    </div>
+                    <div class="description">
+                        <a href="#" class="title">말랑말랑 찹쌀떡 곰</a>
+                        <a href="#" class="name">모찌스튜디오</a>
+                        <p class="price">2,500원</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="thumb">
+                        <a href="#"><img src="./images/emojimarket/cat.svg" alt=""></a>
+                    </div>
+                    <div class="description">
+                        <a href="#" class="title">졸린 냥이</a>
+                        <a href="#" class="name">캣러버</a>
+                        <p class="price">2,500원</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="thumb">
+                        <a href="#"><img src="./images/emojimarket/chick.svg" alt=""></a>
+                    </div>
+                    <div class="description">
+                        <a href="#" class="title">긍정왕 병아리</a>
+                        <a href="#" class="name">해피바이브</a>
+                        <p class="price">2,200원</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="thumb">
+                        <a href="#"><img src="./images/emojimarket/bunny.svg" alt=""></a>
+                    </div>
+                    <div class="description">
+                        <a href="#" class="title">대충 그린 토끼</a>
+                        <a href="#" class="name">귀차니즘</a>
+                        <p class="price">1,500원</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="thumb">
+                        <a href="#"><img src="./images/emojimarket/dog.svg" alt=""></a>
+                    </div>
+                    <div class="description">
+                        <a href="#" class="title">열망적인 강아지</a>
+                        <a href="#" class="name">멍멍이</a>
+                        <p class="price">2,500원</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="thumb">
+                        <a href="#"><img src="./images/emojimarket/hamster.svg" alt=""></a>
+                    </div>
+                    <div class="description">
+                        <a href="#" class="title">소심한 햄스터</a>
+                        <a href="#" class="name">햄찌</a>
+                        <p class="price">2,000원</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="thumb">
+                        <a href="#"><img src="./images/emojimarket/fox.svg" alt=""></a>
+                    </div>
+                    <div class="description">
+                        <a href="#" class="title">시크한 여우</a>
+                        <a href="#" class="name">폭스</a>
+                        <p class="price">2,500원</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="thumb">
+                        <a href="#"><img src="./images/emojimarket/bear.svg" alt=""></a>
+                    </div>
+                    <div class="description">
+                        <a href="#" class="title">직장인 김대리</a>
+                        <a href="#" class="name">워커홀릭</a>
+                        <p class="price">2,000원</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-inner">
+            <strong>Emoji Market</strong>
+            <p>&copy;2025 Emoji Market.All rights reserved</p>
+            <div class="link">
+                <a href="#"><img src="./images/icons/instagram.svg" alt="instagram"></a>
+                <a href="#"><img src="./images/icons/twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="./images/icons/facebook.svg" alt="facebook"></a>
+            </div>
+        </div>
+
     </section>
 
 </body>
