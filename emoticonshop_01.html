@@ -46,6 +46,8 @@
         /* 헤더 */
         .page-header {
             background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
         .logo {
             color: #3474ff;
@@ -103,13 +105,11 @@
             justify-content: center;
             cursor: pointer;
             position: relative;
-            transition: 0.5s;
+            transition: 0.3s;
         }
         .login:hover {
-            background-color: rgb(1, 1, 1);
-            transition: 0.5s;
-            bottom: 4px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transform: translateY(-6px);
         }
         /* 히어로 */
         .hero-section {
@@ -134,10 +134,10 @@
             justify-content: center;
             box-shadow: 0 8px 16px rgba(0,0,0,0.1);
             position: relative;
-            transition: 0.5s;
+            transition: 0.3s;
         }
         .popular-emoji:hover {
-            bottom: 4px;
+            transform: translateY(-6px);
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
         .hero-img {
@@ -228,7 +228,7 @@
             transition: 0.5s;
         }
         .card:hover {
-            bottom: 8px;
+            transform: translateY(-6px);
             box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         }
         .thumb img {
@@ -298,7 +298,7 @@
                 </button>
             </div>
             <ul class="menu-box">
-                <li class="home"><a href="#">홈</a></li>
+                <li class="home"><a href="#" class="active">홈</a></li>
                 <li class="popular-item"><a href="#">인기</a></li>
                 <li class="new-item"><a href="#">신규</a></li>
                 <li class="login"><a href="#">로그인</a></li>
@@ -320,7 +320,7 @@
             <div class="category">
                 <h2>카테고리</h2>
                 <div class="category-tag">
-                    <a href="#">전체</a>
+                    <a href="#" class="active">전체</a>
                     <a href="#">동물</a>
                     <a href="#">커플</a>
                     <a href="#">직장인</a>
