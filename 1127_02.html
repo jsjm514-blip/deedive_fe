@@ -14,27 +14,288 @@
         /* inner 모음 */
         .inner {
             max-width: 1200px;
+            width: 100%;
             margin:0 auto;
+            padding: 0 50px;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 50px;
+            gap: 50px;
+        }
+        .hero-inner {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 100px 50px;
+            gap: 20px;
+        }
+        .main-inner {
+            padding: 30px 50px;
+        }
+        .footer-inner {
+            gap: 20px;
+            padding: 70px 50px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            text-align: center;
         }
         /* 헤더 */
-        
+        .page-header {
+            background-color: #fff;
+        }
+        .logo {
+            color: #3474ff;
+            font-size: 26px;
+            font-weight: 600;
+        }
+        .search-box {
+            flex: 1;
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid #cbcbcb;
+            padding: 8px 20px;
+        }
+        .search-box:active {
+            border: 1px solid #3474ff;
+        }
+        .search-box input {
+            width: 260px;
+            box-sizing: border-box;
+            border: none;
+            font-size: 16px;
+        }
+        .search-icon {
+            width: 24px;
+            cursor: pointer;
+        }
+        .menu-box {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .home, .popular-item, .new-item {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .home:hover, .popular-item:hover, .new-item:hover {
+            color: #3474ff;
+        }
+        .home.active, .popular-item.active, .new-item.active {
+            color: #3474ff;
+        }
+        .login {
+            background-color: #242424;
+            color: white;
+            width: 84px;
+            height: 40px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            transition: 0.5s;
+        }
+        .login:hover {
+            background-color: rgb(1, 1, 1);
+            transition: 0.5s;
+            bottom: 4px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        /* 히어로 */
+        .hero-section {
+            background: #c4edff;
+            background: linear-gradient(90deg, rgba(196, 237, 255, 1) 3%, rgba(255, 255, 227, 1) 97%);
+        }
+        .hero-title {
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .hero-section span {
+            font-size: 18px;
+        }
+        .popular-emoji {
+            background-color: #3474ff;
+            color: white;
+            width: 200px;
+            height: 46px;
+            border-radius: 23px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            position: relative;
+            transition: 0.5s;
+        }
+        .popular-emoji:hover {
+            bottom: 4px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .hero-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 16px;
+            overflow: hidden;
+            right: 50px;
+            top: 60px;
+            position: absolute;
+        }
+        .hero-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+         /* main-카테고리 */
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category-tag {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+        }
+        .category-tag a {
+            background-color: #fff;
+            color: #676767;
+            font-size: 16px;
+            font-weight: 500;
+            border: 1px solid #e5e5e5;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .category-tag a:hover {
+            background-color: #242424;
+            color: #fff;
+            transition: 0.5s;
+        }
+        .category-tag a.active {
+            background-color: #242424;
+            color: #fff;
+            border: none;
+        }
+        /* main-오늘의 추천 이모티콘 */
+        .rec-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./images/icons/arrow-right.svg);
+            background-repeat: no-repeat;
+            background-size: 24px;
+            background-position: center right 0px;
+            padding-right: 24px;
+        }
+        .more p {
+            color: gray;
+            font-size: 14px;
+        }
+        .card-list {
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+            margin-bottom: 40px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 260px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: 0.5s;
+        }
+        .card:hover {
+            bottom: 8px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .description {
+            background-color: #fff;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #242424;
+        }
+        .name {
+            font-size: 14px;
+            font-weight: 400;
+            color: #959595;
+        }
+        .price {
+            font-size: 16px;
+            font-weight: 700;
+            color:#3474ff;
+        }
+        .won {
+            margin-left: 2px;
+        }
+        /* 푸터 */
+        .footer {
+            background-color: #fff;
+        }
+        .link {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+        }
+        .footer-inner strong {
+            font-size: 20px;
+            font-weight: 600;
+            color: #cecece;
+        }
+        .footer-inner p {
+            font-size: 16px;
+            font-weight: 300;
+            color: #959595;
+        }
     </style>
 </head>
 <body>
     <header class="page-header">
-        <div class="inner">
+        <div class="header-inner inner">
             <h1 class="logo">
                 <a href="#">
                     EMOJI Market
                 </a>
             </h1>
             <div class="search-box">
-                <div class="search-input">
-                    <input type="search" placeholder="귀여운 이모티콘을 찾아보세요!">
-                    <button type="submit">
-                        <img class="search-icon" src="./images/icons/search.svg">
-                    </button>
-                </div>
+                <input type="search" placeholder="귀여운 이모티콘을 찾아보세요!">
+                <button type="submit">
+                    <img class="search-icon" src="./images/icons/search.svg">
+                </button>
             </div>
             <ul class="menu-box">
                 <li class="home"><a href="#">홈</a></li>
@@ -45,7 +306,7 @@
         </div>
     </header>
     <section class="hero-section">
-        <div class="text-container inner">
+        <div class="hero-inner inner">
             <h1 class="hero-title">당신의 대화를<br>더 귀엽게 만들어보세요!</h1>
             <p>매일매일 새로운 작가님들의<br>반짝이는 아이디어를 만나보세요.</p>
             <a href="#" class="popular-emoji">인기 이모티콘 보러가기</a>
@@ -55,7 +316,7 @@
         </div>
     </section>
     <main class="container">
-        <div class="inner">
+        <div class="main-inner inner">
             <div class="category">
                 <h2>카테고리</h2>
                 <div class="category-tag">
@@ -80,7 +341,7 @@
                         <div class="description">
                             <a href="#" class="title">말랑말랑 찹쌀떡 곰</a>
                             <a href="#" class="name">모찌스튜디오</a>
-                            <p class="price">2,500원</p>
+                            <p class="price">2,500<span class="won">원</span></p>
                         </div>
                     </li>
                     <li class="card">
@@ -90,7 +351,7 @@
                         <div class="description">
                             <a href="#" class="title">졸린 냥이</a>
                             <a href="#" class="name">캣러버</a>
-                            <p class="price">2,500원</p>
+                            <p class="price">2,500<span class="won">원</span></p>
                         </div>
                     </li>
                     <li class="card">
@@ -100,7 +361,7 @@
                         <div class="description">
                             <a href="#" class="title">긍정왕 병아리</a>
                             <a href="#" class="name">해피바이브</a>
-                            <p class="price">2,200원</p>
+                            <p class="price">2,200<span class="won">원</span></p>
                         </div>
                     </li>
                     <li class="card">
@@ -110,7 +371,7 @@
                         <div class="description">
                             <a href="#" class="title">대충 그린 토끼</a>
                             <a href="#" class="name">귀차니즘</a>
-                            <p class="price">1,500원</p>
+                            <p class="price">1,500<span class="won">원</span></p>
                         </div>
                     </li>
                     <li class="card">
@@ -120,7 +381,7 @@
                         <div class="description">
                             <a href="#" class="title">열망적인 강아지</a>
                             <a href="#" class="name">멍멍이</a>
-                            <p class="price">2,500원</p>
+                            <p class="price">2,500<span class="won">원</span></p>
                         </div>
                     </li>
                     <li class="card">
@@ -130,7 +391,7 @@
                         <div class="description">
                             <a href="#" class="title">소심한 햄스터</a>
                             <a href="#" class="name">햄찌</a>
-                            <p class="price">2,000원</p>
+                            <p class="price">2,000<span class="won">원</span></p>
                         </div>
                     </li>
                     <li class="card">
@@ -140,7 +401,7 @@
                         <div class="description">
                             <a href="#" class="title">시크한 여우</a>
                             <a href="#" class="name">폭스</a>
-                            <p class="price">2,500원</p>
+                            <p class="price">2,500<span class="won">원</span></p>
                         </div>
                     </li>
                     <li class="card">
@@ -150,7 +411,7 @@
                         <div class="description">
                             <a href="#" class="title">직장인 김대리</a>
                             <a href="#" class="name">워커홀릭</a>
-                            <p class="price">2,000원</p>
+                            <p class="price">2,000<span class="won">원</span></p>
                         </div>
                     </li>
                 </ul>
