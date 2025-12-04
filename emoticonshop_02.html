@@ -6,6 +6,7 @@
     <title>이모티콘 샵 반응형 웹페이지 - 로그인</title>
     <link rel="stylesheet" href="./font.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./emticonshop.css">
 </head>
 <body>
     <header class="page-header">
@@ -29,32 +30,43 @@
             </ul>
         </div>
     </header>
-    <section class="login">
-        <div class="login-container">
-            <h2>환영합니다!</h2>
-            <p>귀여운 이모티콘 세상을 만나보세요</p>
-            <form class="form">
-                <div class="form-field">
-                    <label class="label">이메일</label>
-                    <input class="input-box" placeholder="example@emoji.com">
-                </div>
-                <div class="form-field">
-                    <label class="label">비밀번호</label>
-                    <input class="input-box" placeholder="비밀번호를 입력해주세요">
-                </div>
-                <button type="submit" class="login-btn">로그인</button>
-            </form>
-            <div class="ect">
-                <a href="#" class="password">비밀번호 찾기</a>
-                <a href="#" class="signUp">회원가입</a>
+    <section class="login-container">
+        <h2>환영합니다!</h2>
+        <p>귀여운 이모티콘 세상을 만나보세요</p>
+        <form class="form">
+            <div class="form-field">
+                <label class="label">이메일</label>
+                <input class="input-box" placeholder="example@emoji.com">
             </div>
-            <div class="sns-login">
-                <p class="sns-title">SNS 계정으로 로그인</p>
-                <a href="#" class="kakao"></a>
-                <a href="#" class="google"></a>
-                <a href="#" class="twitter"></a>
+            <div class="form-field">
+                <label class="label">비밀번호</label>
+                <input class="input-box" placeholder="비밀번호를 입력해주세요">
             </div>
+            <button type="submit" class="login-btn">로그인</button>
+        </form>
+        <div class="ect">
+            <a href="#">비밀번호 찾기</a>
+            ㅣ
+            <a href="#">회원가입</a>
+        </div>
+        <div class="sns-title">SNS 계정으로 로그인</div>
+        <div class="sns-login">
+            <a href="#" class="kakao"><img src="./images/kakao.png"></a>
+            <a href="#" class="google"><img src="./images/google.png"></a>
+            <a href="#" class="twitter"><img src="./images/twitter.png"></a>
         </div>
     </section>
+        <footer class="footer">
+        <div class="footer-inner">
+            <strong>Emoji Market</strong>
+            <p>&copy;2025 Emoji Market.All rights reserved</p>
+            <div class="link">
+                <a href="#"><img src="./images/icons/instagram.svg" alt="instagram"></a>
+                <a href="#"><img src="./images/icons/twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="./images/icons/facebook.svg" alt="facebook"></a>
+            </div>
+        </div>
+
+    </footer>
 </body>
 </html>
