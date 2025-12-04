@@ -342,11 +342,30 @@ body {
         }
         
         .sns-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 14px;
             font-weight: 500;
             color: #cecece;
             margin: 20px 0;
+            width: 100%;
         }
+
+        .sns-title::before,
+        .sns-title::after {        
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #e0e0e0;
+        }
+        .sns-title::before {
+            margin-right: 10px;
+        }
+        .sns-title::after {
+            margin-left: 10px;
+        }
+
         .sns-login{
             display: flex;
             align-items: center;
