@@ -234,22 +234,22 @@ body {
             flex-direction: column;
             gap: 10px;
         }
-        .title {
+        .description .title {
             font-size: 16px;
             font-weight: 700;
             color: #242424;
         }
-        .name {
+        .description .name {
             font-size: 14px;
             font-weight: 400;
             color: #959595;
         }
-        .price {
+        .description .price {
             font-size: 16px;
             font-weight: 700;
             color:#3474ff;
         }
-        .won {
+        .description .won {
             margin-left: 2px;
         }
         /* 푸터 */
