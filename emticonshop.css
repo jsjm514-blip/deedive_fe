@@ -300,13 +300,13 @@ body {
             flex-direction: column;
             margin-bottom: 20px;
         }
-        .label {
+        label {
             font-size: 14px;
             font-weight: 700;
             margin-bottom: 4px;
             color: #323232;
         }
-        .input-box {
+        .form input {
             width: 300px;
             height: 40px;
             border: 1px solid #e2e2e2;
@@ -350,6 +350,7 @@ body {
             color: #cecece;
             margin: 20px 0;
             width: 100%;
+            gap: 10px;
         }
 
         .sns-title::before,
@@ -358,12 +359,6 @@ body {
             flex: 1;
             height: 1px;
             background-color: #e0e0e0;
-        }
-        .sns-title::before {
-            margin-right: 10px;
-        }
-        .sns-title::after {
-            margin-left: 10px;
         }
 
         .sns-login{
