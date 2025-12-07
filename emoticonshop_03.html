@@ -30,17 +30,17 @@
             </ul>
         </div>
     </header>
-    <section class="detail-page">
+    <section class="detail-page inner">
         <div class="detail-top">
             <div class="item-view">
-                <div class="thumb-main">
+                <div class="thumb-view">
                     <img src="./images/emojimarket/bear.svg" alt="bear-emoji">
                 </div>
                 <div class="thumb-list">
                     <button type="button">
                         <img src="./images/emojimarket/bear.svg" alt="bear01">
                     </button>
-                    <button type="button">
+                    <button type="button" class="active">
                         <img src="./images/emojimarket/bear02.png" alt="bear02">
                     </button>
                     <button type="button">
@@ -69,7 +69,7 @@
             <h3>이모티콘 구성</h3>
             <div class="set-container">
                 <p class="set-title">말랑말랑 찹쌀떡 곰 이모티콘 세트</p>
-                <ul>
+                <ul class="set-cards">
                     <li class="set-card">
                         <img src="./images/emojimarket/bear01.png" alt="bear01">
                         <p>안녕!</p>
@@ -109,5 +109,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        const thumbBtn = document.querySelectorAll(".thumb-list button")
+        const thumbImg = document.querySelector(".thumb-view img")
+
+        console.log('thumbBtn:',thumbBtn);
+
+        thumbBtn[0].addEventListener('click',()=>{
+            thumbImg.src = "./images/emojimarket/bear.svg";
+        })
+        thumbBtn[1].addEventListener('click',()=>{
+            thumbImg.src = "./images/emojimarket/bear02.png";
+        })
+        thumbBtn[2].addEventListener('click',()=>{
+            thumbImg.src = "./images/emojimarket/bear03.png";
+        })
+        thumbBtn[3].addEventListener('click',()=>{
+            thumbImg.src = "./images/emojimarket/bear04.png";
+        })
+        thumbBtn[4].addEventListener('click',()=>{
+            thumbImg.src = "./images/emojimarket/bear02.png";
+        })
+    </script>
 </body>
 </html>
