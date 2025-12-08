@@ -407,6 +407,7 @@ body {
             height: 60px;
             background-color: #fff;
             border: 1.6px solid #fff;
+            border-radius: 10px;
             position: relative;
             transition: 0.3s;
         }
@@ -495,7 +496,7 @@ body {
             padding: 40px;
             box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.03);
         }
-        .set-title {
+        .set-container h4 {
             font-size: 24px;
             font-weight: 600;
             text-align: center;
