@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Module</title>
+</head>
+<body>
+    <h1>Javascript Module</h1>
+    <p id="msg"></p>
+    <p id="msg2"></p>
+
+    <script type="module">
+        import {sayHello,sayGoodbye} from './modules/user.js';
+        document.getElementById('msg').textContent=sayHello("Ghost")
+        document.getElementById('msg2').textContent=sayGoodbye("Ghost")
+
+    </script>
+</body>
+</html>

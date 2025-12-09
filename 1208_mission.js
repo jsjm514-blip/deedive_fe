@@ -33,11 +33,12 @@ function mission5(str, char) {
     return str.split('').filter((a)=>a===char).length;
 }console.log(mission5('banana', 'a')) // 3 -> a가 banana에 몇개 있는지 출력
 
+console.clear()
 
 // 06. 주어진 문자가 들어있는 User의 이름을 출력(대소문자 구분없음)
 const users = ["Ghost", "Irangi", "Camel", "Shoopa", "Nuvis"];
 function mission6(arr, char) {
-  // code here
+    return Object.values(arr.includes(char));
 }
 console.log(mission6(users, "c")); // [ 'Irangi', 'Camel' ]
 console.log(mission6(users, "s")); // [ 'Shoopa' ]
