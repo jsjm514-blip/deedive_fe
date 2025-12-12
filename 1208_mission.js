@@ -38,7 +38,7 @@ console.clear()
 // 06. 주어진 문자가 들어있는 User의 이름을 출력(대소문자 구분없음)
 const users = ["Ghost", "Irangi", "Camel", "Shoopa", "Nuvis"];
 function mission6(arr, char) {
-    return Object.values(arr.includes(char));
+    return users.filter((name)=>name.includes(char))
 }
 console.log(mission6(users, "c")); // [ 'Irangi', 'Camel' ]
 console.log(mission6(users, "s")); // [ 'Shoopa' ]
@@ -46,7 +46,9 @@ console.log(mission6(users, "s")); // [ 'Shoopa' ]
 // 07. 대소문자 변환
 // 주어진 문자열을 대문자는 소문자로, 소문자는 대문자로 변환하시오
 function mission7(str) {
-// code here
+    const char = str.split('')
+    if (char===char.toUpperCase()){char=char.toLowerCase()}
+    else {char=char.toUpperCase()}
 }
 console.log(mission7("Hello Ghost")); // 'hELLO gHOST'
 
